@@ -84,7 +84,7 @@ const CheckpointsEditor = ({ checkpoints }: Props) => {
                 style={{ width: "60%" }}
                 icon={<PlusOutlined />}
               >
-                Add field
+                Add Task
               </Button>
               <Form.ErrorList errors={errors} />
             </Form.Item>

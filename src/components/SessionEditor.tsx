@@ -31,30 +31,6 @@ const SessionEditor = ({ session,create, submit }: Props) => {
       span: 8
     }
   };
-
-  const formItemLayout = {
-    labelCol: {
-      xs: { span: 24 },
-      sm: { span: 4 },
-    },
-    wrapperCol: {
-      xs: { span: 24 },
-      sm: { span: 20 },
-    },
-  };
-  const formItemLayoutWithOutLabel = {
-    wrapperCol: {
-      xs: { span: 24, offset: 0 },
-      sm: { span: 20, offset: 4 },
-    },
-  };
-
-  let add = ()=>{
-
-  }
-  let remove = (Task:String)=>{
-
-  }
   const [ form ] = Form.useForm()
   form.setFieldsValue({title:session.title,notes:session.notes,date:moment(session.date)})
   console.log("session editor", session);

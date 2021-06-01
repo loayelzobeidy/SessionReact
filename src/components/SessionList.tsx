@@ -17,16 +17,12 @@ interface Props {
 const SessionList = ({ sessions, submit,select}: Props)=> {
     
   const deleteHandler = (record:any) => {
-    console.log("recor",record);
-    
-    console.log("Delete the session");
     DeleteSession(record)
     submit();
     
 };
 
 const editHandler = (record:any) => {
-  console.log("update the sessionn")
   select(record);
 }
 
