@@ -32,7 +32,7 @@ const editHandler = (record:any) => {
 
   const items = sessions
 
-  return <div className="todo-container">
+  return <div className="session-container">
       <Table dataSource={sessions}>
       <Column title="Id" dataIndex="id" key="id" />
       <Column title="Title" dataIndex="title" key="title" />
